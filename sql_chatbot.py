@@ -10,7 +10,6 @@ from langchain.callbacks import StreamlitCallbackHandler
 from langchain.agents import create_sql_agent
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 import streamlit as st
-import openai
 
 st.title("Talk to your data")
 api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
