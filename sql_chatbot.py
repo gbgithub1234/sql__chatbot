@@ -16,10 +16,10 @@ api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
 db_string = st.secrets["DB_STRING"] # st.text_input("db_string")
 
 if api_key:
-    db = SQLDatabase.from_uri(db_string)
-    toolkit = SQLDatabaseToolkit(db=db, llm=OpenAI(temperature=0, openai_api_key=api_key))
+    db = SQLDatabase.from_uri(st.secrets["DB_STRING"])
+    toolkit = SQLDatabaseToolkit(db=db, llm=OpenAI(temperature=0, openai_api_key=st.secrets["OPENAI_API_KEY"]))
     agent_executor = create_sql_agent(
-        llm=OpenAI(temperature=0, streaming=True, openai_api_key=api_key),
+        llm=OpenAI(temperature=0, streaming=True, openai_api_key=st.secrets["OPENAI_API_KEY"]),
         toolkit=toolkit,
         verbose=True,
         agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
