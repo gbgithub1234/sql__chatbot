@@ -12,8 +12,8 @@ from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 import streamlit as st
 
 st.title("Talk to your data")
-api_key = st.text_input("api_key")
-db_string = st.text_input("db_string")
+api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
+db_string = st.secrets["DB_STRING"] # st.text_input("db_string")
 
 if api_key:
     db = SQLDatabase.from_uri(db_string)
