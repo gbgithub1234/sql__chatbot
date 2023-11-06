@@ -39,7 +39,7 @@ with st.expander("Show/hide details"):
     # st.write("- documents which have been ingested are located [here](%s)" % url)
 
 #------------------------------------------
-st.header("SFU Database Chatbot 1.0 (beta)")
+st.header("SFU Report Chatbot 1.0 (beta)")
 
 
 api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
