@@ -11,7 +11,37 @@ from langchain.agents import create_sql_agent
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 import streamlit as st
 
-st.title("Talk to your data")
+#------------------------------------------
+
+url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
+url2 = "https://www.pinecone.io/"
+
+multiline_str1 = """
+- created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
+- leverages ChatGPT and [Pinecone vector storage](%s) """ % url2
+
+multiline_str2 = """to access these [sample documents](%s)""" % url
+
+multiline_str3 ="""\n - sample prompt: 'How can I create a marketing effort?' \n"""
+
+
+
+with st.expander("Show/hide details"):
+    st.write(multiline_str1 + multiline_str2 + multiline_str3)
+
+
+    # st.markdown("- created by Glen Brauer, Business Analyst in AAE")
+    # st.markdown("- demonstrates the ability to leverage ChatGPT and vector storage to access documents")
+    # st.markdown("- sample question: 'How can I create a marketing effort?'")
+    #
+    # url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
+    #
+    # st.write("- documents which have been ingested are located [here](%s)" % url)
+
+#------------------------------------------
+st.header("SFU Database Chatbot 1.0 (beta)")
+
+
 api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
 db_string = st.secrets["DB_STRING"] # st.text_input("db_string")
 
