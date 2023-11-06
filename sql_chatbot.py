@@ -19,15 +19,13 @@ url2 = "https://www.pinecone.io/"
 multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
 
-- PROBLEM: document-based information can be scattered in many places\n
+- PROBLEM: reports can take days or weeks to be developed manually\n
 
-- SOLUTION: provide a one-stop shopping resource for all document-based information\n
+- SOLUTION: provide a self-serve report generator\n"""
 
-- leverages AI and [Pinecone vector storage](%s) """ % url2
+multiline_str2 = """- leverages AI to query this [sample database](%s)""" % url
 
-multiline_str2 = """to access these [sample documents](%s)""" % url
-
-multiline_str3 ="""\n - sample prompt: 'How can I create a marketing effort?' \n"""
+multiline_str3 ="""\n - sample prompt: 'How many customers do we have in how many places?' \n"""
 
 
 
