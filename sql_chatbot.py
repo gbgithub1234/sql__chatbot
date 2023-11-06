@@ -13,7 +13,7 @@ import streamlit as st
 
 #------------------------------------------
 
-url = "https://drive.google.com/drive/u/0/folders/1gTD-OiqH5Bg3-ZqVuur9q8h-AGIzOlB7"
+url = "https://drive.google.com/file/d/1oyiIcBY8vw4qAvaZKxIHtaGpz5V0Oj8k/view?usp=drive_link"
 url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
