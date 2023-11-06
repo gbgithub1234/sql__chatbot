@@ -18,7 +18,12 @@ url2 = "https://www.pinecone.io/"
 
 multiline_str1 = """
 - created by Glen Brauer, Business Analyst in AAE (glenb@sfu.ca) \n
-- leverages ChatGPT and [Pinecone vector storage](%s) """ % url2
+
+- PROBLEM: document-based information can be scattered in many places\n
+
+- SOLUTION: provide a one-stop shopping resource for all document-based information\n
+
+- leverages AI and [Pinecone vector storage](%s) """ % url2
 
 multiline_str2 = """to access these [sample documents](%s)""" % url
 
