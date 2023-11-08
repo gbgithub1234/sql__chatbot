@@ -25,7 +25,10 @@ multiline_str1 = """
 
 multiline_str2 = """- leverages AI to query this [sample database](%s)""" % url
 
-multiline_str3 ="""\n - sample prompt:\n 'Which customers located in San Francisco have purchased products? Include the names of the customers, and the product names in your results.' \n"""
+multiline_str3 ="""\n - sample prompt:\n 'Which customers located in San Francisco have purchased products? Include the names of the customers, and the product names in your results.' 
+- scroll down to see its thoughts, actions and results
+
+\n"""
 
 
 
