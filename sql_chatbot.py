@@ -47,6 +47,8 @@ with st.expander("Show/hide details"):
 #------------------------------------------
 st.header("SFU Report Chatbot 1.0 (beta)")
 
+st.chat_input(placeholder="Enter your prompt here...")
+
 
 api_key = st.secrets["OPENAI_API_KEY"]  # st.text_input("api_key")
 db_string = st.secrets["DB_STRING"] # st.text_input("db_string")
